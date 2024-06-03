@@ -1,0 +1,145 @@
+#UserDashboard {
+    background-color: color(backgroundColor);
+
+    .detailSection,
+    .notificationSection,
+    .historySection,
+    .progressSection,
+    .feedbackSection,
+    .repairSection,
+    .carsSection,
+    .solutionSection {
+        box-shadow      : rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+        width           : 100%;
+        border-radius   : 6px;
+        padding         : 16px 0px;
+        background-color: white;
+    }
+
+    .table-responsive::-webkit-scrollbar {
+        height          : 6px;      /* Set the height of the scrollbar */
+        background-color: #f3f3f3;  /* Set the background color of the scrollbar */
+      }
+      
+      .table-responsive::-webkit-scrollbar-thumb {
+        background-color: color(primary0);  /* Set the color of the scrollbar thumb */
+        border-radius   : 6px;              /* Set the border radius of the scrollbar thumb */
+      }
+      
+      .table-responsive::-webkit-scrollbar-thumb:hover {
+        background-color: color(primary0);  /* Set the color of the scrollbar thumb on hover */
+      }
+
+    tr th {
+        font-weight: 700;
+    }
+
+    .table thead th,
+    .table tbody td {
+        white-space: nowrap;
+    }
+
+    .table thead th {
+        padding: 16px !important;
+    }
+
+    td,
+    tr {
+        padding       : 14px 24px;
+        text-align    : center;
+        vertical-align: middle;
+    }
+
+    .editIconDetails {
+        top  : -16px;
+        right: 16px;
+    }
+    .scroll-container::-webkit-scrollbar {
+        height          : 10px;  /* Height of the scrollbar */
+        background-color: #ccc;  /* Background color of the scrollbar track */
+    }
+
+    /* Style for the thumb of the horizontal scrollbar */
+    .scroll-container::-webkit-scrollbar-thumb {
+        background-color: #888;  /* Color of the scrollbar thumb */
+    }
+
+    thead th {
+        // background-color: #f2f2f2;
+        color: white;
+        padding: 8px !important;
+    }
+
+    .table-striped>tbody>tr:nth-child(odd)>td,
+    .table-striped>tbody>tr:nth-child(odd)>th {
+        background-color: #f3f3f3;  // Choose your own color here
+    }
+
+
+
+    .viewBtnTable {
+        padding         : 8px !important;
+        font-size       : 12px !important;
+        background-color: color(primary0);
+        color           : white;
+        border-radius   : 4px;
+        outline         : 0px;
+        border          : 0px;
+    }
+
+
+    .editIconDetails:hover {
+        svg path {
+            fill: color(primary40);
+            transition: ease 0.3s;
+        }
+
+        svg {
+            height: 19px;
+            width: 19px;
+            transition: ease 0.3s;
+        }
+    }
+
+    .box {
+        padding      : 4px 10px;
+        border       : 1px solid color(neutral60);
+        border-radius: 4px;
+    }
+
+    .avatarBorder {
+        height          : 110px;
+        width           : 110px;
+        border-radius   : 50%;
+        background-color: color(primary0);
+        border          : 1px solid color(primary0);
+    }
+
+    .avatarImg {
+        height       : 100px;
+        width        : 100px;
+        border-radius: 50%;
+    }
+
+    .aboutSection {
+        padding: 0px 24px;
+    }
+
+    .singleNotification {
+        margin : 20px 0px;
+        padding: 0px 16px;
+    }
+
+    .readNotification {
+        color: #CFD0D4;
+    }
+
+    .CircularProgressbar {
+        position: relative;
+    }
+   .CircularProgressbar-text{
+        margin-left: -24px;
+   }
+
+     
+}

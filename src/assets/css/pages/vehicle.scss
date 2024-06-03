@@ -1,0 +1,45 @@
+#Vehicle{
+    .VehicleDetailSection, .diagnosisSection{
+        padding: 4vw 3vw 3vw 3vw;
+    }
+
+    .singleYear{
+        padding: 8px;
+        border: 1px solid color(primary50)
+    }
+
+    .active{
+        background-color: color(primary50);
+        color           : color(white);
+    }
+
+    .searchSection{
+        background-color: color(backgroundColor);
+        border-radius   : 12px;
+        z-index         : 100;
+        padding         : 36px;
+
+    }
+
+    .searchField, .searchField:focus, .searchField:hover{
+        border-radius: 6px;
+        border       : 0px;
+        outline      : 0px;
+        padding      : 8px 16px;
+        width        : 100%;
+    }
+
+    .searchBtn{
+        padding      : 8px 16px;
+        color        : white;
+        border-radius: 6px;
+        margin-left: -32px;
+    }
+
+    .titles{
+        padding         : 24px 32px;
+        background-color: color(backgroundColor);
+        border-radius   : 6px;
+    }
+
+}

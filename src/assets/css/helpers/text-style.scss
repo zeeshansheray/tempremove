@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$types:(
+  "Heading":  "Open Sans",
+  "Body"   :  "Open Sans",
+  "Caption":  "Open Sans",
+  "Link"   :  "Open Sans",
+  "U"      :  "Open Sans",
+);
+
+$sizes:(
+  "54":54px,
+  "50":50px,
+  "42":42px,
+  "36":36px,
+  "32":32px,
+  "30":30px,
+  "26":26px,
+  "28":28px,
+  "24":24px,
+  "22":22px,
+  "20":20px,
+  "18":18px,
+  "16":16px,
+  "15":15px,
+  "14":14px,
+  "13":13px,
+  "12":12px,
+  "11":11px,
+  "10":10px,
+);
+
+
+$weights:(
+  "R":400,
+  "M":500,
+  "B":700,
+);
+
+//Heading18M, Heading18R
+
+
+@each $tname,$type in $types {
+@each $sname,$size in $sizes {
+@each $wname,$weight in $weights {
+    .#{$tname}#{$sname}#{$wname} {
+      font-family: $type;
+      font-size:#{$size} !important;
+      font-weight:$weight !important;
+      line-height: #{$size + 2};
+      // font-style: normal;
+      -webkit-font-smoothing: antialiased;
+    }
+    }
+    }
+}
